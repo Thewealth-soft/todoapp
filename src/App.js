@@ -1,5 +1,4 @@
 import TodoList from './component/AddTodo';
-// import Trial  from "./Trial";
 function App() {
   return (
     <>
