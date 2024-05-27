@@ -1,4 +1,23 @@
-This is the best way to write a code in vscode, can i atleast add the function of date to this todoApp this best way to do this is to do it yourself, how can i do this is it to clone it to the project. 
+<<<<<<< HEAD
+# TodoList App
 
+A simple TodoList application built with React that allows users to add, edit, and delete tasks.
 
-do i need to work on the interface before the coding, i can`t do this alone, does this mean i can write 2 line of code in a project 
+## Features
+
+- Add new tasks
+- Edit existing tasks
+- Delete tasks
+- Local storage to persist tasks
+
+## Technologies Used
+
+- React
+- React Icons
+- CSS
+
+## Contributing
+
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+
+>>>>>>> d0c73e162c40220168e3975f4186296d903d083b
