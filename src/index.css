@@ -19,7 +19,7 @@
   --color-bg: #4274d3;
   --color-bg2: #193a6f;
   --color-light: #ccf0f3;
-  --color-dark: #222;
+  --color-dark: #2222;
 }
 
 body {
@@ -58,8 +58,18 @@ body {
   justify-content: space-between;
 }
 
+.inputValue button {
+  cursor: pointer;
+  background-color: var(--color-bg2);
+}
+
+.inputValue .MdAdd{
+  font-size: 2.2rem;
+  background-color: var(--color-bg2);
+  color: #fff;
+}
 .inputValue input {
-  background: transparent;
+  background: transparent; 
   padding: 10px;
   color: rgb(161, 160, 160);
   font-size: 1rem;
@@ -80,11 +90,14 @@ body {
   color: rgba(255, 0, 0, 0.799);
 }
 
-.inputDisplay {
+.inputDisplay,.editInput {
+  /* color: red; */
+  /* background-color: red; */
   margin-top: 1.5rem;
   padding: 5px 1rem;
   width: 100%;
   border-radius: 5px;
+  border-top: 2px solid green;
   font-size: 1.5rem;
   display: flex;
   align-items: center;
@@ -92,7 +105,8 @@ body {
 }
 
 .inputDisplay p {
-  /* color: red; */
+ /* border: 1px solid #fff;
+ padding: 1rem; */
   margin-right: 2rem;
 }
 
