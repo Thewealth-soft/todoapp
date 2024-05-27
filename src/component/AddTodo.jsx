@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "../index.css";
+import { MdAdd } from "react-icons/md";
 import { CiEdit } from "react-icons/ci";
 import { RiDeleteBin6Line } from "react-icons/ri";
 import { GrSave } from "react-icons/gr";
@@ -77,13 +78,16 @@ function TodoList() {
             onKeyDown={enterClick}
             placeholder="Enter a new item "
           />
-          <button onClick={addTodo}>Add Todo</button>
+          <button onClick={addTodo}>
+            <MdAdd className="MdAdd" />{" "}
+          </button>
         </form>
         <div>
           {todoList.map((todo, index) => (
             <div key={index} className="inputDisplay">
               {editTodoIndex === index ? (
                 <input
+                  className="editInput"
                   type="text"
                   value={editTodo}
                   onChange={(e) => setEditTodo(e.target.value)}
