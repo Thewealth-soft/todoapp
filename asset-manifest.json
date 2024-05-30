@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/Thewealth-soft/todoapp.git/static/css/main.ed48799d.css",
+    "main.js": "/Thewealth-soft/todoapp.git/static/js/main.229af97e.js",
+    "static/js/453.6e5b8230.chunk.js": "/Thewealth-soft/todoapp.git/static/js/453.6e5b8230.chunk.js",
+    "index.html": "/Thewealth-soft/todoapp.git/index.html",
+    "main.ed48799d.css.map": "/Thewealth-soft/todoapp.git/static/css/main.ed48799d.css.map",
+    "main.229af97e.js.map": "/Thewealth-soft/todoapp.git/static/js/main.229af97e.js.map",
+    "453.6e5b8230.chunk.js.map": "/Thewealth-soft/todoapp.git/static/js/453.6e5b8230.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ed48799d.css",
+    "static/js/main.229af97e.js"
+  ]
+}
