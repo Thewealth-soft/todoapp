@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/Thewealth-soft/todoapp/static/css/main.ed48799d.css",
-    "main.js": "/Thewealth-soft/todoapp/static/js/main.a0e56322.js",
-    "static/js/453.6e5b8230.chunk.js": "/Thewealth-soft/todoapp/static/js/453.6e5b8230.chunk.js",
-    "index.html": "/Thewealth-soft/todoapp/index.html",
-    "main.ed48799d.css.map": "/Thewealth-soft/todoapp/static/css/main.ed48799d.css.map",
-    "main.a0e56322.js.map": "/Thewealth-soft/todoapp/static/js/main.a0e56322.js.map",
-    "453.6e5b8230.chunk.js.map": "/Thewealth-soft/todoapp/static/js/453.6e5b8230.chunk.js.map"
+    "main.css": "/todoapp/static/css/main.ed48799d.css",
+    "main.js": "/todoapp/static/js/main.01c7b48e.js",
+    "static/js/453.6e5b8230.chunk.js": "/todoapp/static/js/453.6e5b8230.chunk.js",
+    "index.html": "/todoapp/index.html",
+    "main.ed48799d.css.map": "/todoapp/static/css/main.ed48799d.css.map",
+    "main.01c7b48e.js.map": "/todoapp/static/js/main.01c7b48e.js.map",
+    "453.6e5b8230.chunk.js.map": "/todoapp/static/js/453.6e5b8230.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.ed48799d.css",
-    "static/js/main.a0e56322.js"
+    "static/js/main.01c7b48e.js"
   ]
 }
