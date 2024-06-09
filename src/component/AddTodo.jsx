@@ -4,12 +4,16 @@ import { MdAdd } from "react-icons/md";
 import { CiEdit } from "react-icons/ci";
 import { RiDeleteBin6Line } from "react-icons/ri";
 import { GrSave } from "react-icons/gr";
+
 function TodoList() {
   const [todoList, setTodoList] = useState(() => {
     const savedTodoList = localStorage.getItem("todoList");
     return savedTodoList
       ? JSON.parse(savedTodoList)
-      : ["watch movie", "code in python"];
+      : [
+          { text: "watch movie", date: new Date().toLocaleString() },
+          { text: "code in python", date: new Date().toLocaleString() },
+        ];
   });
 
   // State to store the new todo item
@@ -25,9 +29,11 @@ function TodoList() {
   // Function to add a new todo
   function addTodo() {
     if (newTodo.trim() !== "") {
-      // Create a new todo list by adding the new todo item
-      setTodoList([...todoList, newTodo]);
-      // Clear the input field after adding the todo item
+      const newTodoItem = {
+        text: newTodo,
+        date: new Date().toLocaleString(),
+      };
+      setTodoList([...todoList, newTodoItem]);
       setNewTodo("");
     }
   }
@@ -35,13 +41,16 @@ function TodoList() {
   // Function to handle editing of todo item
   function editTodoItem(index) {
     setEditTodoIndex(index);
-    setEditTodo(todoList[index]);
+    setEditTodo(todoList[index].text);
   }
 
   // Function to update the todo item after editing
   function updateTodoItem(index) {
     const updatedTodoList = [...todoList];
-    updatedTodoList[index] = editTodo;
+    updatedTodoList[index] = {
+      text: editTodo,
+      date: updatedTodoList[index].date, // Keep the original date
+    };
     setTodoList(updatedTodoList);
     setEditTodoIndex(-1); // Reset editTodoIndex after editing
   }
@@ -52,7 +61,8 @@ function TodoList() {
     updatedTodoList.splice(index, 1);
     setTodoList(updatedTodoList);
   };
-// Function to handle enter click
+
+  // Function to handle enter click
   function enterClick(event) {
     if (event.key === "Enter") {
       event.preventDefault();
@@ -93,7 +103,10 @@ function TodoList() {
                   onChange={(e) => setEditTodo(e.target.value)}
                 />
               ) : (
-                <p>{todo}</p>
+                <div>
+                  <p>{todo.text}</p>
+                  <small>{todo.date}</small>
+                </div>
               )}
               <div className="rightsideDisplay">
                 {editTodoIndex === index ? (
