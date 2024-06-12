@@ -1,14 +1,12 @@
-import TodoList from './component/AddTodo';
+import TodoList from './component/TodoList';
 function App() {
   return (
     <>
-       <div className="container">
-      <header>
+      <div className="container">
         <TodoList />
-      </header>
-    </div>
+      </div>
     </>
- 
+
   );
 }
 
