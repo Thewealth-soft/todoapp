@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import "./TodoItem.css"
 import { CiEdit } from "react-icons/ci";
 import { RiDeleteBin6Line } from "react-icons/ri";
 import { GrSave } from "react-icons/gr";

@@ -1,0 +1,27 @@
+.inputDisplay,
+.editInput {
+  margin-top: 1.5rem;
+  padding: 5px 1rem;
+  width: 100%;
+  border-radius: 5px;
+  border-top: 2px solid green;
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.inputDisplay p {
+  margin-right: 2rem;
+}
+
+.CiEdit {
+  color: #008000;
+}
+
+.GrSave {
+  color: #FFD700
+}
+.delete {
+  color: rgba(255, 0, 0, 0.799);
+}

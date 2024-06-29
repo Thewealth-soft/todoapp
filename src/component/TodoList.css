@@ -1,0 +1,24 @@
+.heading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Cinzel Decorative", serif;
+  text-transform: uppercase;
+  padding-bottom: 2rem;
+  font-size: 3rem;
+  font-weight: 400;
+  word-spacing: 5px;
+  letter-spacing: 9px;
+  color: rgba(210, 178, 178, 0.92);
+}
+
+@media screen and (max-width: 600px) {
+
+   .heading {
+    padding-bottom: 1rem;
+    font-size: 1.5rem;
+    word-spacing: 3px;
+    letter-spacing: 5px;
+  }
+
+}

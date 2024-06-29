@@ -1,8 +1,9 @@
 import React, { useState, useEffect } from "react";
 import "../index.css";
+import "./TodoList.css"
 import TodoForm from "./TodoForm";
 import TodoItem from "./TodoItem";
-import ConfirmationDialog from "./confirmtionDialog";
+import DeleteConfirmation from "./DeleteConfirmation";
 
 function TodoList() {
   const [todoList, setTodoList] = useState(() => {
@@ -25,6 +26,7 @@ function TodoList() {
 
   const [isDialogOpen, setIsDialogOpen] = useState(false);
   const [todoToDelete, setTodoToDelete] = useState(null);
+  const [deleteMessage, setDeleteMessage] = useState("")
 
   useEffect(() => {
     localStorage.setItem("todoList", JSON.stringify(todoList));
@@ -56,6 +58,10 @@ function TodoList() {
   }
 
   function confirmDelete(index) {
+    const todoText = todoList[index].text
+    const reducedText = todoText.length > 20 ? `${todoText.substring(0, 20)}...` : todoText;
+    const boldReducedText = `<strong>${reducedText} </strong>`
+    setDeleteMessage(`This will delete the item:"${boldReducedText}".`);
     setIsDialogOpen(true);
     setTodoToDelete(index);
   }
@@ -89,14 +95,14 @@ function TodoList() {
           />
         ))}
       </div>
-      {
-        isDialogOpen && 
-        <ConfirmationDialog
-          message="Are you sure you want to delete this item?"
+      {isDialogOpen && (
+        <DeleteConfirmation
+          question="Delete items?"
+          message={deleteMessage}
           onConfirm={handleDelete}
           onCancel={handleCancel}
         />
-      }
+      )}
     </div>
   );
 }
