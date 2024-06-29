@@ -1,0 +1,40 @@
+/* Buttons */
+.pop-up_msg-content div {
+  display: flex;
+  justify-content: right;
+  padding-top: 1rem;
+
+}
+
+.pop-up_msg-content button {
+  margin: 5px;
+  padding: 10px 16px;
+  border: none;
+  border-radius: 1rem;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.pop-up_msg-content button:first-of-type {
+  background-color: #fff;
+  color: #111;
+  border: 1px solid #11111130;
+}
+
+.pop-up_msg-content div button:first-of-type:hover {
+  --opacity: 1;
+  background-color: rgba(227, 227, 227, 1);
+  font-weight: bold;
+}
+
+.pop-up_msg-content div button:last-of-type {
+  background-color: rgba(245, 66, 66, 0.681);
+  color: rgb(252, 252, 252);
+}
+
+.pop-up_msg-content div button:last-of-type:hover {
+  --opacity: 1;
+  background-color: rgb(242, 65, 65);
+
+  font-weight: bold;
+}

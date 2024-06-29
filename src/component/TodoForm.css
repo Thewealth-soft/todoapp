@@ -1,0 +1,54 @@
+.inputValue {
+  padding: 5px 1rem;
+  width: 100%;
+  background-color: var(--color-bg2);
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.inputValue button {
+  cursor: pointer;
+  background-color: var(--color-bg2);
+}
+
+.inputValue .MdAdd {
+  font-size: 2.2rem;
+  background-color: var(--color-bg2);
+  color: #fff;
+}
+
+.inputValue input {
+  background: transparent;
+  padding: 10px;
+  color: rgb(161, 160, 160);
+  font-size: 1rem;
+}
+
+.inputValue div,
+.inputDisplay div div {
+  margin-left: 0.7rem;
+  padding: 0.3rem;
+  cursor: pointer;
+  border-radius: 0.5rem;
+  font-size: 1.5rem;
+  display: flex;
+  flex-direction: row;
+}
+@media screen and (max-width: 600px) {
+
+   .inputValue {
+    padding: 3px 1rem;
+    width: 95%;
+  }
+
+  .inputValue div,
+  .inputDisplay div div {
+    margin-left: 0.7rem;
+    padding: 0.3rem;
+    cursor: pointer;
+    border-radius: 0.5rem;
+    font-size: 1.5rem;
+  }
+}
