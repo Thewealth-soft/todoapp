@@ -2,6 +2,7 @@
 
 # initial full todoapp in a single file
 /src/component/AddTodo.jsx
+
 # dependencies
 /node_modules
 /.pnp
