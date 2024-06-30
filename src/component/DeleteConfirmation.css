@@ -1,6 +1,6 @@
 
 /* pop-up_msg background */
-/* .pop-up_msg {
+ .pop-up_msg {
   position: fixed;
   top: 0;
   left: 0;
@@ -11,7 +11,7 @@
   justify-content: center;
   align-items: center;
   z-index: 1000;
-} */
+} 
 
 /* pop-up_msg_message content */
 .pop-up_msg-content {
